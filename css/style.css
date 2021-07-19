@@ -5,16 +5,16 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body, html {
+html,body{
     height: 100%;
-    overflow-x: none;
-    overflow-y: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .center {
-    max-width: 1280px;
     display: flex;
     flex-wrap: wrap;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 2%;
 }
@@ -24,19 +24,50 @@ header {
     padding: 20px 0;
 }
 
-.logo {
+.logo{
     width: 50%;
 }
 
-.menu{
+.menu {
     padding-top: 30px;
     width: 50%;
     text-align: right;
 }
 
-.menu a {
-    text-decoration: none;
+.menu a{
     color: black;
+    text-decoration: none;
     font-weight: bold;
     margin-right: 15px;
+}
+
+section.sobre{
+    height: calc(100% - 200px);
+    position: relative;
+}
+
+.extras {
+    background-color: #017143;
+    bottom: -350px;
+    right: -300px;
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.extras img{
+    max-width: 300px;
+}
+
+.social-media{
+    position: absolute;
+    right: 310px;
+    top: 150px;
+}
+
+.social-media img{
+    display: block;
+    margin: 20px 0;
+    width: 20px;
 }
